@@ -5,7 +5,9 @@ android {
 
     defaultConfig {
         applicationId "com.android.example.favoritetoys"
+        //noinspection MinSdkTooLow
         minSdkVersion 10
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -19,8 +21,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleDependency
     implementation 'com.android.support:appcompat-v7:25.1.0'
-
-    // TODO (7) Remove the ConstraintLayout dependency as we aren't using it for these simple projects
-    implementation 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
 }
